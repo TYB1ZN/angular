@@ -1,0 +1,74 @@
+<!-- <app-navbar></app-navbar>
+<p>{{message}}</p>
+<app-post [fromParent]="parentMessage" (messageEvent)="reciveMessage($event)"></app-post>
+<h1 [class.text-red]="bool">{{formChildOutput}}</h1>
+<h1 [style.color]="bool ? 'green':'black'">data binding</h1>
+<button (click)="bool = !bool"> Click me :))</button>
+
+<input type="text" (keyup.enter)="onKeyup(username.value)" #username/>
+<input type="text" [(ngModel)]="takeValue" (keyup.enter)="onKeyup()"/>-->
+<!-- <div class="form-area">
+    <h1>Post form</h1>
+    <br> <br>
+    <input type="text" placeholder="Post title" [(ngModel)]='postTitle'/>
+    <br> <br>
+    <textarea name="" id="" cols="30" rows="10" placeholder="post details" [(ngModel)]="postDetails"> </textarea>
+    <br> <br>
+    <input type="text" placeholder="Post image" [(ngModel)]='imageURL'/>
+    <br> <br>
+    <input type="text" placeholder="Post URL" [(ngModel)]='postURL'/>
+    <br> <br>
+    <input type="checkbox" [(ngModel)]='addBackground' /> Add background
+    <br> <br>
+</div> -->
+<!-- <div class="preview_area">
+    <img [src]="imageURL" alt="">
+    <h1>{{postTitle}}</h1>
+    <p>{{postDetails}}</p>
+   
+    <a [href]="postURL" target="_blank"> More Details</a>
+</div> -->
+<!--<ul>
+    <li *ngFor="let post of postArray"> {{post}}</li>
+    <li *ngFor="let post of objectArray">
+        {{post | json}} <br>
+        <button (click)="onDelete(post)">clickk me to delete object</button>
+    </li>
+</ul>
+<button (click)="addNew()">Click me to add new object</button>-->
+<!-- <button (click)="onDelete(post)">clickk me to delete object</button> -->
+<!-- <button (click)="onClick('step 1')">step 1</button>
+<button (click)="onClick('step 2')">step 2</button>
+<button (click)="onClick('step 3')">step 3</button> -->
+<!-- 
+<div [ngSwitch]="stepForm">
+    <div *ngSwitchCase="'step 1'">Step 1</div>
+    <div *ngSwitchCase="'step 2'">Step 2</div>
+    <div *ngSwitchCase="'step 3'">Step 3</div>
+</div> -->
+<div class="text-area">
+    <h2>user Detail</h2>
+    <input type="text" placeholder="name" [(ngModel)]='name'/>
+    <br><br>
+    <input type="email" placeholder="e-mail"[(ngModel)]='email'>
+    <br><br>
+    <textarea placeholder="address" cols="30" rows="10" [(ngModel)]='address'></textarea>
+    <br><br>
+    <button (click)="onClick()">Save</button>
+</div>
+<div class="table-area">
+     <thead width="500">
+        <th>#</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Address</th>
+     </thead>
+     <tr *ngFor="let u of user; let index= index">
+        <td>{{index}}</td>
+        <td>{{u.name}}</td>
+        <td>{{u.email}}</td>
+        <td>{{u.add}}</td>
+     </tr>
+</div>
+<router-outlet></router-outlet> 
+
